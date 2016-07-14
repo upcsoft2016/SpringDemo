@@ -18,6 +18,11 @@ public class IndexController {
     @Autowired
     private CreateFoodDao createFoodDao;
 
+    @RequestMapping("/test")
+    public Object Return(){
+        return "this is a test";
+    }
+
     @RequestMapping("/")
     public String indexShow(){
         return "Hello Cheney!";
